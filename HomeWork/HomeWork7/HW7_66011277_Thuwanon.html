@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unofficial Transcript</title>
+</head>
+<style>
+    h2,
+    h3,
+    h4 {
+    text-align: center;
+    }
+
+    #main {
+    width: 794px;
+    height: 297mm;
+    border: 1px solid #000;
+    margin: 20px auto;
+    padding: 20mm;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    }
+    #photo
+    
+    {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    border: 1px solid black;
+    margin: 0 auto;
+    float: right;
+    }
+
+    #box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #s-info form {
+    margin-top: 60px;
+    display: flex;
+    }
+
+    #right {
+    margin-top: 40px;
+    }
+
+    table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    }
+
+    table th {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 8px;
+    }
+
+    table td {
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    }
+
+    table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    }
+
+    table tr:nth-child(odd) {
+    background-color: #ffffff;
+    }
+
+    input[type="text"] {
+    text-align: center;
+    margin: 10px;
+    }
+
+    .credit,
+    .grade {
+    width: 8%;
+    }
+
+    input[type="submit"] {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    float: right;
+    }
+
+    .semester-header {
+    font-weight: bold;
+    background-color: #d9d9d9;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    }
+
+    .summary-row {
+    font-weight: bold;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 8px;
+    border-top: 2px solid black;
+    }
+
+    #import {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    #import span {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    #jsonFileInput {
+        margin-left: 10px;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <div id="header">
+            <h2>Unofficial Transcript</h2>
+            <h4>School of Engineering</h4>
+            <div id="photo">
+                <div id="box">
+                    <h4 id="photo-label">Photo</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="s-info">
+            <form>
+                <div id="left">
+                    <div class="info">
+                        <em><label for="student-name">Name</label></em>
+                        <input type="text" id="student-name" name="student" placeholder="Mr./Miss Nxxxx Xxxxxxx">
+                    </div>
+
+                    <div class="info">
+                        <em><label for="dob">Date of Birth</label></em>
+                        <input type="text" id="dob" name="birth">
+                    </div>
+
+                    <div class="info">
+                        <em><label for="admission-date">Date of Admission</label></em>
+                        <input type="text" id="admission-date" name="admission" placeholder="20xx">
+                    </div>
+
+                    <div class="info">
+                        <em><label for="degree">Degree</label></em>
+                        <input type="text" id="degree" name="degree" placeholder="Bachelor of Engineering">
+                    </div>
+
+                    <div class="info">
+                        <em><label for="major">Major</label></em>
+                        <input type="text" id="major" name="major" placeholder="Software Engineering">
+                    </div>
+
+                </div>
+                <div id="right">
+                    <div class="info">
+                        <em><label for="student-id">Student ID</label></em>
+                        <input type="text" id="student-id" name="ID" placeholder="65xxxxxx">
+                    </div>
+
+                    <div class="info">
+                        <em><label for="grad-date">Date of Graduation</label></em>
+                        <input type="text" id="grad-date" name="graduation" placeholder="N/A">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th class="credit">Credit</th>
+                    <th class="grade">Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <div id="import">
+            <span>Import Transcript</span>
+            <input type="file" id="jsonFileInput" accept=".json">
+        </div>
+    </div>
+    <script src="HW7_66011277_Thuwanon.js"></script>
+</body>
+
+</html>

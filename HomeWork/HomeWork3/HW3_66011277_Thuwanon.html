@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unofficial Transcript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h3, h4 {
+            text-align: center;
+            margin: 0;
+        }
+        #background {
+            width: 894px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #photo {
+            width: 100px;
+            height: 120px;
+            border: 1px solid black;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            text-align: center;
+            line-height: 120px;
+        }
+        .info-left, .info-right {
+            width: 48%;
+            float: left;
+            margin-top: 120px;
+        }
+        .info-right {
+            float: right;
+            margin-top: 150px;
+        }
+        .info-field {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 3px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border:#000 1px solid; 
+        }
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+        th.course {
+            text-align: center;
+            width: 40%;
+        }
+        th.credit, th.grade {
+            width: 10%;
+        }
+        #submit {
+            display: block;
+            margin: 20px 750px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #gpa {
+            align-items: center;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        #credit {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        #grade {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        #course {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        #total-credit {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <header>
+            <h3>(Unofficial Transcript)</h3>
+            <h4>School of Engineering</h4>
+            <div id="photo">
+                Photo
+            </div>
+        </header>
+        <div class="info-left">
+            <div class="info-field"><b>Name:</b> <input type="text" placeholder="Mr/Miss Nxxxx Xxxxx"></div>
+            <div class="info-field"><b>Date of Birth:</b> <input type="text" placeholder="MMMM DD, 20XX"></div>
+            <div class="info-field"><b>Date of Admission:</b> <input type="text" placeholder="20XX"></div>
+            <div class="info-field"><b>Degree:</b> <input type="text" placeholder="Bachelor of Engineering"></div>
+            <div class="info-field"><b>Major:</b> <input type="text" placeholder="Software Engineering"></div>
+        </div>
+        <div class="info-right">
+            <div class="info-field"><b>Student ID:</b> <input type="text" placeholder="65XXXXXX"></div>
+            <div class="info-field"><b>Date of Graduation:</b> <input type="text" placeholder="N/A"></div>
+        </div>
+        <form>
+        <table>
+            <thead>
+                <tr>
+                    <th class="course"><b>COURSE TITLE</b></th>
+                    <th class="credit"><b>CREDIT</b></th>
+                    <th class="grade"><b>GRADE</b></th>
+                    <th class="course"><b>COURSE TITLE</b></th>
+                    <th class="credit"><b>CREDIT</b></th>
+                    <th class="grade"><b>GRADE</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3 style="font-size: medium"><u>Tranfer Credit</u></h3>
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id = "course">
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title">
+                        </div>
+                    </td>
+                    <td>
+                        <div id ="credit">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                    </td>
+                    <td>
+                        <div id="grade">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id = "gpa">
+                        <h3 style="font-size: medium">GPA:</h3><input type="text" placeholder="X" style="width: 20px;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 style="font-size: medium"><u>1st Semester, Year, 2021-2022</u></h3>
+                        <div id="course">
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                        </div>
+                    </td>
+                    <td>
+                        <div id ="credit">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                    </td>
+                    <td>
+                        <div id="grade">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id = "gpa">
+                        <h3 style="font-size: medium">GPA:</h3><input type="text" placeholder="X" style="width: 20px; margin-right: 5px;">
+                        <h3 style="font-size: medium">GPS:</h3><input type="text" placeholder="X" style="width: 20px;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 style="font-size: medium"><u>2nd Semester, Year, 2021-2022</u></h3>
+                        <div id = "course">
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                        </div>
+                    </td>
+                    <td>
+                        <div id ="credit">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                    </td>
+                    <td>
+                        <div id="grade">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id = "gpa">
+                        <h3 style="font-size: medium">GPA:</h3><input type="text" placeholder="X" style="width: 20px; margin-right: 5px;">
+                        <h3 style="font-size: medium">GPS:</h3><input type="text" placeholder="X" style="width: 20px;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 style="font-size: medium"><u>1st Semester, Year, 2022-2023</u></h3>
+                        <div id = "course">
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                            <input type="text" placeholder="Course ID" style="width: 50px; margin: 10px;"><input type="text" placeholder="Course Title" style="size:33"><br>
+                        </div>
+                    </td>
+                    <td>
+                        <div id ="credit">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                    </td>
+                    <td>
+                        <div id="grade">
+                        &nbsp;<br>
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        <input type="text" placeholder="X" style="margin: 10px">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id = "gpa">
+                        <h3 style="font-size: medium">GPA:</h3><input type="text" placeholder="X" style="width: 20px; margin-right: 5px; ">
+                        <h3 style="font-size: medium">GPS:</h3><input type="text" placeholder="X" style="width: 20px;">
+                        </div>
+                        <div id = "total-credit">
+                        <h3 style="font-size: small">Total number of credits earned:</h3>
+                        <input type="text" placeholder="XX" style="width: 40px;">
+                        &nbsp;<br>
+                        &nbsp;<br>
+                        &nbsp;<br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+        <input type="submit" value="Submit" id="submit">
+    </div>
+</body>
+</html>
