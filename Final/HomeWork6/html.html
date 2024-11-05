@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+    }
+</style>
+<body>
+    <table id = "calendar">
+        <thead>
+            <tr>
+                <th><button id="prev">&lt</button></th>
+                <th colspan="5"><span id="month-year"></span></th>
+                <th><button id="next">&gt</button></th>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tbody id="calendar-body"></tbody>
+        </tbody>
+    </table>
+</body>
+<script src="js.js" defer></script>
+</html>

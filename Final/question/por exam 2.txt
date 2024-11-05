@@ -1,0 +1,32 @@
+Mock Exam 2
+Part 1: JavaScript Frontend (10%)
+Event Handling: Write JavaScript code that shows an alert with the message "Product added to cart" when a button with the class add-to-cart is clicked.
+
+JSON Parsing: Write JavaScript code to parse the following JSON string and access the price property of the first item:
+
+json
+คัดลอกโค้ด
+'[{"id": 1, "name": "Laptop", "price": 999.99}, {"id": 2, "name": "Phone", "price": 599.99}]'
+Part 2: Web Theory (10%)
+HTTP Request Format: Describe the structure of an HTTP request, including the role of headers and the request body.
+
+URL Structure: Identify and describe the components of the following URL:
+
+arduino
+คัดลอกโค้ด
+https://www.example.com/shop?category=electronics&page=2
+Persistent Connections: Explain what is meant by persistent connections in HTTP/1.1. Why are they useful?
+
+Part 3: FastAPI Backend for Online Shopping (10%)
+Add to Cart: Write a FastAPI endpoint that allows users to add an item to their shopping cart. Assume the cart is stored in memory as a dictionary where the key is the product_id and the value is the quantity.
+
+GET with Query Parameters: Implement a FastAPI endpoint /products that returns a list of products filtered by category. Use query parameters to specify the category.
+
+Response Model: Why is response_model used in FastAPI? Write an example endpoint that returns a list of products using a Pydantic model for validation.
+
+Part 4: Jinja2 Template (10%)
+Looping in Templates: Write a Jinja2 template to display a numbered list of product names using a loop.
+
+Template Filters: Explain how the upper filter works in Jinja2, and provide an example where it’s applied to a variable named name.
+
+Static Files: How do you serve static files like CSS with FastAPI and Jinja2? Write a basic example that includes a stylesheet in a Jinja2 template.

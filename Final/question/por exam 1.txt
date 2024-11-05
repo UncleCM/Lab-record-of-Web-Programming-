@@ -1,0 +1,29 @@
+Mock Exam 1
+Part 1: JavaScript Frontend (10%)
+DOM Manipulation: Write JavaScript code that changes the color of all paragraphs (<p> tags) to blue when a button with the ID changeColor is clicked.
+
+Fetch API: Write JavaScript code to send a GET request to /api/products and log the response data in the console. Use error handling to manage cases where the request fails.
+
+Part 2: Web Theory (10%)
+HTTP Methods: Describe the difference between GET and POST requests. Provide an example use case for each method in an e-commerce context.
+
+HTTP Status Codes: Explain the purpose of each of the following status codes and when you might encounter them:
+
+200 OK
+404 Not Found
+500 Internal Server Error
+SSL/TLS: Why is HTTPS recommended for online transactions? Briefly explain how SSL/TLS contributes to secure communication.
+
+Part 3: FastAPI Backend for Online Shopping (10%)
+Product Management: Write a FastAPI endpoint to add a new product. Assume products have the following fields: name (string), price (float), and stock (integer). Use a Pydantic model to validate the product data.
+
+User Authentication: Explain how you would protect an endpoint that is only accessible to authenticated users. How could you implement this with FastAPI?
+
+Error Handling: Write code for a FastAPI endpoint to retrieve a product by its ID. If the product does not exist, return a 404 error with a message "Product not found".
+
+Part 4: Jinja2 Template (10%)
+Template Variables: Create a simple Jinja2 template to display a product list. Each product should display name, price, and stock.
+
+Template Conditionals: Extend the template to show "Out of stock" if a product's stock is zero, and "In stock" otherwise.
+
+Template Inheritance: Briefly describe the purpose of template inheritance in Jinja2 and provide an example of how you would set up a base layout with a content block.

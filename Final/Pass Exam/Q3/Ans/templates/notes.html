@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <title>MyNote</title>
+</head>
+<body>
+    <h1>MyNote App</h1>
+    <div class="smth">
+        <h3 style="margin-right: 100px;">All Notes:</h3>
+        <h3 style="text-decoration: underline; cursor: pointer;"><a href="{{ url_for('login_page') }}">Back</a></h3>
+    </div>
+    <table>
+        <tr>
+            <td>{{ note.title }}</td>
+        </tr>
+        <tr>
+            <td>{{ note.body }}</td>
+        </tr>
+    </table>
+</body>
+</html>

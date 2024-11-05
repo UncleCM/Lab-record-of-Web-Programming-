@@ -1,0 +1,27 @@
+.smth {
+    display: flex;
+}
+
+h3 {
+    margin-right: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px; /* Adjust width as needed */
+}
+
+/* Header styling */
+thead th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Cell styling */
+td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 33.33%;
+    text-align: left; /* Align text to the left */
+}

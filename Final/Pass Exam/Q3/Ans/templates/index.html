@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <title>MyNote</title>
+</head>
+<body>
+    <h1>MyNote App</h1>
+    <div class="smth">
+        <h3 style="margin-right: 100px;">All Notes:</h3>
+        <h3 style="text-decoration: underline; cursor: pointer;"><a href="/create-note">Add a new note</a></h3>
+    </div>
+    <table>
+        {% for id,note in data.notes.items() %}
+            <tr>
+                <td><a href="/notes/{{id}}">{{ note["title"] }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

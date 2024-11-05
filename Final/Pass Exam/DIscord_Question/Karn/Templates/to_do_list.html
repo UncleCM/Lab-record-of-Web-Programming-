@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <ul>
+        <a href=""></a>
+        <a href="/list/{list_id}/edit">Edit</a>
+        {% for list_id, list in data.items() %}
+            <li>
+                <a href="/list/{list_id}"</a>
+                <a href="/list/{{ list_id }}">{{ list.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

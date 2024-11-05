@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note List</title>
+</head>
+<body>
+    <h1>My Notes</h1>
+    <ul>
+        <a href="/note/{{ note_id }}/edit">Edit</a>
+        {% for note_id, note in data.items() %}
+            <li>
+                <a href="/note/{{ note_id }}">{{ note.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

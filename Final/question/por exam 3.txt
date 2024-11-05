@@ -1,0 +1,26 @@
+Mock Exam 3
+Part 1: JavaScript Frontend (10%)
+Form Handling: Write JavaScript code to handle form submission by capturing the form data and logging it to the console.
+
+AJAX: Describe the difference between synchronous and asynchronous requests in JavaScript. Why is asynchronous preferred in web applications?
+
+Part 2: Web Theory (10%)
+HTTP/HTTPS and SSL: How does HTTPS improve security over HTTP? Describe what SSL certificates do.
+
+Cookies: Explain what cookies are and give an example of how they are used in state management for a user session.
+
+HTTP Headers: Describe the purpose of the Authorization header and give an example of how it might be used in an API request.
+
+Part 3: FastAPI Backend for Online Shopping (10%)
+Checkout Process: Write a FastAPI endpoint /checkout that processes a checkout request. Assume it requires a JSON body with user_id, total_amount, and payment_method.
+
+Handling JSON Data: Explain how FastAPI reads JSON data from the request body. Write an example endpoint that receives JSON data for a new user and returns a success message.
+
+Exception Handling: Explain why exception handling is important in API development. Write code for an endpoint that raises a 400 error if a user tries to add an out-of-stock item to the cart.
+
+Part 4: Jinja2 Template (10%)
+Control Structures: Write a Jinja2 template to display different messages based on a user_role variable (admin, user, or guest).
+
+Template Macros: What are macros in Jinja2? Write an example of a macro that creates a form input for a username field.
+
+Template Inheritance: Describe how template inheritance works in Jinja2. Write a base template and a child template that overrides the content block.
